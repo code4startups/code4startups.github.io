@@ -18,8 +18,9 @@ body {
 }
 
 body {
-    .serif-font;
-    background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("https://sitemco.files.wordpress.com/2016/03/c.jpg");
+    // .serif-font;
+    .sans-serif-font;
+    background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("/img/header01.jpg");
     background-size: auto, cover;
     background-attachment: fixed, fixed;
     background-position: center, center
@@ -93,7 +94,7 @@ aside {
     .sans-serif-font;
     .transition-all;
     .navbar-header .navbar-brand {
-        color: @theme-primary;
+        color: #FFF;
         .sans-serif-font;
         font-weight: 700;
         text-transform: uppercase;
@@ -116,9 +117,10 @@ aside {
             > a,
             > a:focus {
                 text-transform: uppercase;
-                font-weight: 400;
+                font-weight: 600;
                 font-size: 13px;
                 color: @theme-dark;
+                color: #FFF;
                 &:hover {
                     color: @theme-primary;
                 }
@@ -137,7 +139,7 @@ aside {
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: fade(white, 30%);
+        // border-color: fade(white, 30%);
         .navbar-header .navbar-brand {
             // color: fade(white, 70%);
             &:hover,
@@ -184,6 +186,7 @@ header {
     background-position: center;
     text-align: center;
     color: #333;
+
     img{
       width: 101px;
       margin-bottom: 12px;
@@ -201,6 +204,9 @@ header {
                 text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: 0;
+                width: 80%;
+                margin: auto;
+                color: #FFF;
             }
             hr {
                 margin: 30px auto;
@@ -210,6 +216,9 @@ header {
                 color: fade(black, 70%);
                 font-size: 16px;
                 margin-bottom: 50px;
+                color: #FFF;
+                font-weight: 700;
+                letter-spacing: 0.2em;
             }
         }
     }
@@ -241,16 +250,24 @@ header {
 
 .section-heading {
     margin-top: 0;
+    color: @theme-comp1;
+    font-weight: 600;
 }
 
 .service-box {
     max-width: 400px;
     margin: 50px auto 0;
+    h3{
+      color: #FFF;
+      font-weight: 600;
+    }
+
     @media (min-width: 992px) {
         margin: 20px auto 0;
     }
     p {
         margin-bottom: 0;
+        color: #eeeeee;
     }
     img{
       width: 126px;
@@ -339,7 +356,7 @@ header {
 }
 
 .btn-primary {
-    .button-variant(white;@theme-primary;@theme-primary);
+    .button-variant(white;#118B6D;#118B6D);
 }
 
 .btn {
