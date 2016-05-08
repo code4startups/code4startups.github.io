@@ -3,8 +3,20 @@ body {
   height: 100%;
   width: 100%;
 }
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("https://sitemco.files.wordpress.com/2016/03/c.jpg");
+  background-size: auto, cover;
+  background-attachment: fixed, fixed;
+  background-position: center, center;
 }
 hr {
   border-color: #c0392b;
@@ -86,7 +98,7 @@ aside {
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 13px;
   color: #222222;
 }
@@ -152,7 +164,8 @@ header .header-content {
   width: 100%;
 }
 header .header-content .header-content-inner h1 {
-  font-weight: 700;
+  font-size: 45px;
+  font-weight: 300;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
